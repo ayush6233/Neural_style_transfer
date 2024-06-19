@@ -38,18 +38,18 @@ You can install the required libraries using pip:
 
 1. Clone the repository:
 
-  git clone https://github.com/yourusername/neural-style-transfer.git
+  git clone https://github.com/ayush6233/neural-style-transfer.git
   cd neural-style-transfer
 
 2. Place your content and style images in the project directory.
 
 3. Update the `content_path` and `style_path` variables in the script with the paths to your images:
 
-content_path = "path/to/your/content_image.jpg"
+content_path = "path/to/your/content_image.jpg",
 style_path = "path/to/your/style_image.jpg"
 
 4. Run the script:
-python neural_style_transfer.py
+  python neural_style_transfer.py
 
 
 ### Preprocessing
