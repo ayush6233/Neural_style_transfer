@@ -38,19 +38,19 @@ You can install the required libraries using pip:
 pip install tensorflow numpy matplotlib
 
 
-Explanation
-Preprocessing
-Images are loaded, converted to float32, and resized while maintaining their aspect ratios.
-
-VGG19 Model
-The VGG19 network is used for feature extraction. We use specific layers to extract content and style features.
-
-Loss Calculation
-Content Loss: Measures how much the content in the generated image differs from the content image.
-Style Loss: Measures how much the style in the generated image differs from the style image using the Gram matrix.
-Total Variation Loss: Encourages spatial smoothness in the generated image to reduce noise.
-Optimization
-An Adam optimizer is used to iteratively update the generated image to minimize the total loss.
+## Explanation
+  -Preprocessing
+    Images are loaded, converted to float32, and resized while maintaining their aspect ratios.
+  
+  -VGG19 Model
+    The VGG19 network is used for feature extraction. We use specific layers to extract content and style features.
+  
+  -Loss Calculation
+    Content Loss: Measures how much the content in the generated image differs from the content image.
+    Style Loss: Measures how much the style in the generated image differs from the style image using the Gram matrix.
+    Total Variation Loss: Encourages spatial smoothness in the generated image to reduce noise.
+  -Optimization
+    An Adam optimizer is used to iteratively update the generated image to minimize the total loss.
 
 Results
 Example output images will be shown here after the script runs. You can compare the content image, style image, and the final output image.
