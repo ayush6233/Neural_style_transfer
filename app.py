@@ -126,8 +126,8 @@ if content_file and style_file:
     steps_per_epoch = st.slider("Steps per epoch", 1, 10, 5)
     
     # Run optimization
-    for epoch in range(3):
-        for step in range(5):
+    for epoch in range(5):
+        for step in range(10):
             loss = train_step(generated_image)
         st.write(f"Epoch {epoch + 1}/{epochs}, Loss: {loss}")
     
